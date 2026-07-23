@@ -18,9 +18,9 @@ Introduction to PyTorch 실습 스터디 자료입니다. [Learn PyTorch for Dee
 | 주차 | 교재 챕터 | 내용 | 과제 |
 |---|---|---|---|
 | 1 | [00](https://www.learnpytorch.io/00_pytorch_fundamentals/) + [01](https://www.learnpytorch.io/01_pytorch_workflow/) | 텐서 다루기, 학습 루프 전 과정 | [1주차 과제](week1/assignment.ipynb) |
-| 2 | [02](https://www.learnpytorch.io/02_pytorch_classification/) | 이진분류, 비선형, 다중분류, 평가 | TBA |
-| 3 | [03](https://www.learnpytorch.io/03_pytorch_computer_vision/) | CNN 구조, Conv2d, CV 학습, 평가 | TBA |
-| 4 | [04](https://www.learnpytorch.io/04_pytorch_custom_datasets/) + [05](https://www.learnpytorch.io/05_pytorch_going_modular/) + [07(일부)](https://www.learnpytorch.io/07_pytorch_experiment_tracking/) | Custom Datasets, 모듈화, TensorBoard 데모 | TBA |
+| 2 | [02](https://www.learnpytorch.io/02_pytorch_classification/) | 이진분류, 비선형, 다중분류, 평가 | [2주차 과제](week2/assignment.ipynb) |
+| 3 | [03](https://www.learnpytorch.io/03_pytorch_computer_vision/) | CNN 구조, Conv2d, CV 학습, 평가 | [3주차 과제](week3/assignment.ipynb) |
+| 4 | [04](https://www.learnpytorch.io/04_pytorch_custom_datasets/) + [05](https://www.learnpytorch.io/05_pytorch_going_modular/) + [07(일부)](https://www.learnpytorch.io/07_pytorch_experiment_tracking/) | Custom Datasets, 모듈화, TensorBoard 데모 | [4주차 과제](week4/assignment.ipynb) |
 
 ## 진행 방법
 
@@ -29,12 +29,12 @@ Introduction to PyTorch 실습 스터디 자료입니다. [Learn PyTorch for Dee
   ```
   weekN/
     assignment.ipynb        # 과제: 지시문 + 스타터 코드 + TODO
-    solution.ipynb          # 발표자/조교용 해답 (과제 마감 후 공개)
+    solution.ipynb          # 해답 (스터디 진행 후 공개)
   ```
 
 - **발표자**: 교재 내용 + 과제 발표를 준비합니다.
 - **참가자**: 발표가 있기 전 내용을 숙지하고 과제를 미리 수행합니다.
-- **해답**: `solution.ipynb`은 과제 마감 후에 공개합니다.
+- **해답**: `solution.ipynb`은 스터디 진행 후에 공개합니다.
 
 ## 환경 세팅
 
@@ -44,13 +44,13 @@ Introduction to PyTorch 실습 스터디 자료입니다. [Learn PyTorch for Dee
 
 1. 과제 노트북 상단의 **Open in Colab** 버튼을 클릭합니다. (커리큘럼 표의 과제 링크 → GitHub에서 열어도 버튼이 보입니다)
 2. `파일 → Drive에 사본 저장`으로 사본을 만들어 작업하세요. 사본이 아니면 변경 내용이 저장되지 않습니다.
-3. (선택) GPU 사용: `런타임 → 런타임 유형 변경 → T4 GPU`. 1~2주차는 CPU로 충분하고, 3~4주차는 GPU를 권장합니다.
-4. 제출 전 `런타임 → 세션 다시 시작 및 모두 실행`으로 처음부터 끝까지 에러 없이 실행되는지 확인하세요.
+3. (선택) GPU 사용: `런타임 → 런타임 유형 변경 → T4 GPU`. 1, 2주차는 CPU로 충분하고, 3, 4주차는 GPU를 권장합니다.
+4. 과제를 모두 수행한 이후 `런타임 → 세션 다시 시작 및 모두 실행`으로 처음부터 끝까지 에러 없이 실행되는지 확인하세요.
 
 참고 사항:
 
 - `torch`, `torchvision`, `matplotlib`, `numpy`, `pandas`, `scikit-learn`, `tensorboard` 등 필요한 패키지는 Colab에 기본 설치되어 있습니다. 없는 패키지가 필요한 주차는 노트북 안에 `!pip install ...` 셀이 포함되어 있습니다.
-- Colab 세션이 초기화되면 노트북이 만든 파일(그래프 `*.png`, 모델 `*.pth` 등)은 사라집니다. **제출용 파일은 좌측 파일 패널에서 미리 다운로드**해 두세요.
+- Colab 세션이 초기화되면 노트북이 만든 파일(그래프 `*.png`, 모델 `*.pth` 등)은 사라집니다.
 
 ### (참고) 로컬 실행
 
